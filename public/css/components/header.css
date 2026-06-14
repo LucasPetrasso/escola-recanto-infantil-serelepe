@@ -1,2 +1,15 @@
 /* HEADER */
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary);
+}

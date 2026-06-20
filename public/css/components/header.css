@@ -37,17 +37,20 @@
 .header_nav {
     display: flex;
     flex-direction: column;
-    margin-top: 138px;
+    margin-top: 115px;
     background-color: var(--secondary);
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 .header_logo img {
     position: absolute;
-    width: 245px;
-    height: 229px;
+    width: 225px;
+    height: 209px;
     margin-left: 100px;
     z-index: 150;
-    top: 12px;
+    bottom: 12px;
 }
 
 .nav_menu {

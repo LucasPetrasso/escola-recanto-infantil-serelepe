@@ -1,3 +1,5 @@
+/* SLIDES */
+
 .slider {
     width: 100%;
     min-height: 500px;
@@ -40,7 +42,7 @@
     font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
-/* Botões */
+/* BOTÕES */
 
 .btn {
     position: absolute;
@@ -69,7 +71,7 @@
     background: rgba(0, 0, 0, 0.7);
 }
 
-/* Indicadores */
+/* INDICADORES */
 
 .indicators {
     position: absolute;

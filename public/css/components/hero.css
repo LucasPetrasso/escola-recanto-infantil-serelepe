@@ -46,7 +46,7 @@
 
 .btn {
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     z-index: 10;
     background: rgba(0, 0, 0, 0.4);
@@ -75,7 +75,7 @@
 
 .indicators {
     position: absolute;
-    bottom: 25px;
+    bottom: 46px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -91,5 +91,16 @@
 }
 
 .indicator.active {
-    background: white;
+    background: var(--white);
+}
+
+/* BANNER */
+
+.hero_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: var(--terciary);
+    color: var(--white);
 }

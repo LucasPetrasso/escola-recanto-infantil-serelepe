@@ -60,7 +60,7 @@
     padding: 20px 24px;
     gap: 1px;
     border-left: solid 1px var(--terciary) ;
-    color: #fff;
+    color: var(--white);
     font-size: 1.3rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);

@@ -2,5 +2,5 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #f0eeee;
+    background-color: var(--off-white);
 }

@@ -3,9 +3,12 @@
 :root {
     /* Cores primárias */
     --primary: #b9d8f5;
-    --secondary: #25C5F9;
-    --terciary: #1a3daf;
+    --secondary: #23b9eb;
+    --terciary: #133297;
     --white: #fff;
+
+    /* Cores secundárias */
     --off-white: #f0eeee;
     --light-green: #B2D589;
+    --light-blue:#1b98c2;
 }

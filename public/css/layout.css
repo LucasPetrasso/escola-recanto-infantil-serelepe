@@ -1,0 +1,72 @@
+/* LAYOUTS PRINCIPAIS */
+
+/* TURMAS */
+.turmas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light-blue);
+}
+
+.turmas h1 {
+    align-self: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+    color: var(--white);
+    border-bottom: solid 3px var(--light-green);
+}
+
+.turmas_lista {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+#lista_card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 30px;
+}
+
+.turma_card {
+    width: 350px;
+    overflow: hidden;
+    border-radius: 25px;
+    background: var(--light-green) ;
+    border: 1px solid var(--terciary);
+    transition: 0.4s ease;
+}
+
+.turma_card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.turma_card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    background-color: var(--white);
+}
+
+.content_card {
+    padding: 28px;
+}
+
+.content_card h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.content_card p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--white);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}

@@ -98,9 +98,43 @@
 
 .hero_banner {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    width: 100%;
+    padding: 80px;
     background: var(--terciary);
     color: var(--white);
+}
+
+.hero_banner h1 {
+    align-self: center;
+    margin-bottom: 80px;
+    border-bottom: solid 3px var(--light-green);
+}
+
+.hero_banner_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_banner_img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin-left: 180px;
+    flex: 1;
+}
+
+.hero_banner_img img {
+    width: 60vh;
+    border-radius: 50px;
+}
+
+.hero_banner_description {
+    position: relative;
+    padding: 40px;
+    flex: 1;
 }

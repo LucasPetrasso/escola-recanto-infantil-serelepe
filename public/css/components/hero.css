@@ -110,7 +110,6 @@
 .hero_banner h1 {
     align-self: center;
     margin-bottom: 80px;
-    font-size: 2.5rem;
     border-bottom: solid 3px var(--light-green);
 }
 
@@ -144,7 +143,6 @@
 
 .hero_banner_description h2 {
     margin-bottom: 10px;
-    font-size: 2.5rem;
     font-weight: 500;
     color: var(--light-green)
 }

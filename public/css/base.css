@@ -4,3 +4,15 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: var(--off-white);
 }
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}

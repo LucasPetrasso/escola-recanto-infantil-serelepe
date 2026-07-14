@@ -36,7 +36,7 @@
     width: 350px;
     overflow: hidden;
     border-radius: 25px;
-    background: var(--light-green) ;
+    background: var(--mid-green) ;
     border: 1px solid var(--terciary);
     transition: 0.4s ease;
 }

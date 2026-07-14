@@ -32,11 +32,41 @@
     transition:transform .5s ease;
 }
 
-.carrossel_slides img{
-    width:100%;
-    flex-shrink:0;
-    height:500px;
-    object-fit:cover;
+.carrossel_slide_img {
+    position: relative;
+    min-width: 100%;
+}
+
+.carrossel_slide_img img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+.carrossel_legenda {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, .90) 0%,
+        rgba(0, 0, 0, .50) 25%,
+        rgba(0, 0, 0, .10) 70%,
+        transparent 100%
+    );
+}
+
+.carrossel_legenda h3 {
+    margin: 0;
+    padding: clamp(1rem, 2vw, 2rem);
+    color: var(--white);
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-weight: 400;
+    line-height: 1.2;
+    text-shadow: 0 2px 8px rgba(0,0,0,.5);
 }
 
 .carrossel_btn_prev{

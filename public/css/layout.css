@@ -1,6 +1,6 @@
 /* LAYOUTS PRINCIPAIS */
 
-/* TURMAS */
+/* CARDS - TURMAS */
 .turmas {
     display: flex;
     flex-direction: column;
@@ -163,7 +163,7 @@
     background-color: var(--terciary);    
 }
 
-/* TURMAS */
+/* TURMAS - PÁGINA */
 
 .turmas_description {
     display: flex;
@@ -229,8 +229,9 @@
 .contact_form h3 {
     align-self: center;
     padding-top: 12px;
-    color: var(--secondary);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: var(--white);
+    font-size: 2.25rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 } 
 
 .contact_form input {
@@ -248,7 +249,7 @@
     resize: none;
     border: solid 1px;
     border-radius: 8px;
-    font-family:'Ubuntu', sans-serif;
+    font-family:'Roboto', sans-serif;
     font-size: 1rem;
     
 }

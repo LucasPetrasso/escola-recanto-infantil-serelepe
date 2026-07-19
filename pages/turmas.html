@@ -12,9 +12,6 @@
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- SCRIPT -->
-    <script defer src="/js/carrossel.js"></script>
-
     <!-- FONTS -->
     <link 
         rel="preconnect" 
@@ -61,120 +58,63 @@
                 <nav class="nav_menu">
                     <a href="index.html">Home</a>
                     <a href="about_us.html">Sobre Nós</a>
-                    <a href="turmas.html">Turmas</a>
+                    <a href="#turmas">Turmas</a>
                     <a href="#extracurriculares">Aulas Extra-Curriculares</a>
                     <a href="#contato" id="detalhe_btn_contato">Contato</a>
                 </nav>
             </div>
         </header>
-
-        <!-- MAIN CONTENT -->
-        <main class="about_us_container">
-
-             <!-- Elementos decorativos -->
-            <!--img src="/public/images/esquilo-direita.png" alt="" class="decor decor_esquilo_1"-->
-            
-         <h1>QUEM SOMOS</h1>
+        
+        <!-- TURMAS -->
+        <section class="turmas_section">
+            <div class="turmas_description">
+                <h1>TURMAS</h1>
+                <p>
+                    Um espaço preparado para cada etapa do desenvolvimento.
+                    Do berçário à Educação Infantil, cada turma do Recanto Infantil Serelepe oferece atividades, 
+                    experiências e cuidados planejados para respeitar o ritmo de aprendizagem e incentivar o desenvolvimento integral de cada criança.
+                </p>
+            </div>
             <div class="timeline_container">
                 <div class="timeline_left">
                     <img src="/public/images/logo_no_text.png" class="timeline_img">
                     <p>
-                    Desde 1978, o Recanto Infantil Serelepe dedica-se a oferecer uma educação pautada no carinho, 
-                    no respeito e no desenvolvimento integral das crianças.<br><br> Ao longo de nossa história, construímos 
-                    uma trajetória marcada por aprendizados, conquistas e pela constante busca por um ensino de excelência.
+                        <span class="turmas_title">Berçário</span><br>
+                        Um começo repleto de carinho e cuidado. Nosso berçário foi planejado para oferecer um ambiente seguro, acolhedor 
+                        e tranquilo, onde cada bebê recebe atenção individualizada e estímulos adequados à sua fase de desenvolvimento.<br><br> 
+                        Nossa equipe de profissionais acompanha de perto cada conquista, respeitando o ritmo de cada criança e 
+                        promovendo experiências que favorecem o desenvolvimento motor, cognitivo, sensorial e afetivo.<br><br> 
+                        Com espaços preparados especialmente para os pequenos, garantimos conforto, higiene, 
+                        segurança e muito amor em cada momento do dia.
                     </p>
-            </div>
-            <div class="timeline_right">
-                <p>
-                   Hoje, temos a alegria de receber os filhos de antigos alunos, famílias que voltam a confiar em nosso trabalho 
-                   e fazem parte dessa história.<br><br> Esse vínculo atravessa gerações e reforça o compromisso que assumimos diariamente 
-                   com cada criança que passa por nossa escola.
-                </p>
-                <img src="/public/images/logo_no_text.png" class="timeline_img">
-            </div>
-            <div class="timeline_left">
-                <img src="/public/images/logo_no_text.png" class="timeline_img">
-                <p>
-                   Acreditamos que a educação tem o poder de transformar vidas.<br><br> Por isso, oferecemos um ambiente seguro, acolhedor e estimulante, 
-                   onde cada criança é respeitada em sua individualidade e incentivada a desenvolver sua autonomia, criatividade, curiosidade e confiança.
-                </p>
-            </div>
-            <div class="timeline_right">
-                <p>
-                   Mais do que ensinar, nossa missão é cuidar, acolher e contribuir para a formação de crianças felizes, 
-                   preparadas para descobrir o mundo e construir um futuro repleto de possibilidades.
-                </p>
-                <img src="/public/images/logo_no_text.png" class="timeline_img">
-            </div>
-            </div>
-        </main>
-
-        <!-- CARROSSEL -->
-        <section id="carrossel_section">
-            <h1> NOSSOS ESPAÇOS</h1>
-            <div class="carrossel">
-                <button class="carrossel_btn_prev">&#10094;</button>
-                <div class="carrossel_container">
-                    <div class="carrossel_slides">
-                        <div class="carrossel_slide_img">
-                            <img src="/public/images/patio_frente_01.jpeg" alt="Foto 1">
-                            <div class="carrossel_legenda">
-                                <h3>Pátio Frontal</h3>
-                            </div>
-                        </div>
-                        <div class="carrossel_slide_img">
-                            <img src="/public/images/bercario_01.jpeg" alt="Foto 2">
-                            <div class="carrossel_legenda">
-                                <h3>Berçário</h3>
-                            </div>
-                        </div>
-                        <div class="carrossel_slide_img">
-                            <img src="/public/images/patio_fundos_01.jpeg" alt="Foto 3">
-                            <div class="carrossel_legenda">
-                                <h3>Pátio dos Fundos</h3>
-                            </div>
-                        </div>
-                        <div class="carrossel_slide_img">
-                            <img src="/public/images/refeitorio_01.jpeg" alt="Foto 4">
-                            <div class="carrossel_legenda">
-                                <h3>Refeitório</h3>
-                            </div>
-                        </div>
-                        <div class="carrossel_slide_img">
-                            <img src="/public/images/refeitorio_bercario_01.jpeg" alt="Foto 5">
-                            <div class="carrossel_legenda">
-                                <h3>Refeitório do Berçário</h3>
-                            </div>
-                        </div>
-                        <div class="carrossel_slide_img">
-                            <img src="/public/images/sala_de_aula_03.jpeg" alt="Foto 6">
-                            <div class="carrossel_legenda">
-                                <h3>Sala de Aula</h3>
-                            </div>
-                        </div>
-                        <div class="carrossel_slide_img">
-                            <img src="/public/images/sala_computacao.jpeg" alt="Foto 7">
-                            <div class="carrossel_legenda">
-                                <h3>Sala de Computação</h3>
-                            </div>
-                        </div>
-                        <div class="carrossel_slide_img">
-                            <img src="/public/images/sala_de_aula_01.jpeg" alt="Foto 8">
-                            <div class="carrossel_legenda">
-                                <h3>Sala de Aula</h3>
-                            </div>
-                        </div>
-                        <div class="carrossel_slide_img">
-                            <img src="/public/images/sala_de_aula_04.jpeg" alt="Foto 9">
-                            <div class="carrossel_legenda">
-                                <h3>Sala de Aula</h3>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <button class="carrossel_btn_next">&#10095;</button>
-            </div>
-        </section> 
+                <div class="timeline_right">
+                    <p>
+                        <span class="turmas_title">Maternal I e II</span><br>
+                        Aprender brincando é a melhor forma de crescer.
+                        No Maternal I e Maternal II, as crianças vivenciam uma fase de grandes descobertas e desenvolvimento.<br><br> 
+                        Por meio de atividades lúdicas, brincadeiras, música, contação de histórias, experiências sensoriais e 
+                        projetos pedagógicos, estimulamos a curiosidade, a criatividade e a autonomia.<br><br> Nossa proposta valoriza 
+                        o desenvolvimento da linguagem, da coordenação motora, da socialização e das habilidades emocionais, 
+                        sempre em um ambiente seguro, acolhedor e repleto de afeto, onde cada criança é incentivada a 
+                        explorar o mundo ao seu redor com confiança e alegria.
+                    </p>
+                    <img src="/public/images/logo_no_text.png" class="timeline_img">
+                </div>
+                 <div class="timeline_left">
+                    <img src="/public/images/logo_no_text.png" class="timeline_img">
+                    <p>
+                        <span class="turmas_title">Etapa I e II</span><br>
+                        Preparando cada criança para novos desafios. Na Etapa 1 e Etapa 2, proporcionamos um ambiente que 
+                        estimula a aprendizagem de forma significativa, respeitando o ritmo e as potencialidades de cada criança.<br><br>
+                        Por meio de projetos pedagógicos, atividades lúdicas e experiências diversificadas, desenvolvemos 
+                        habilidades relacionadas à linguagem, ao raciocínio lógico, à coordenação motora, à criatividade
+                        e à convivência em grupo.<br><br> Nossa proposta fortalece a autonomia, a confiança e o prazer em aprender, 
+                        preparando os alunos para a transição ao Ensino Fundamental de maneira leve, segura e acolhedora.
+                    </p>
+                </div>
+            </div>    
+        </section>
 
         <!-- FOOTER -->
         <footer class="footer">
@@ -231,6 +171,4 @@
                 </p>
             </div>
         </footer>
-    </div>
-</body>
-</html>
+    </div>        

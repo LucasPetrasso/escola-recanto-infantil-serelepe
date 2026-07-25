@@ -188,7 +188,7 @@
 }
 
 .turmas_title {
-    font-size: 2rem;
+    font-size: clamp(2rem, 3vw, 3rem);
     color: var(--secondary);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -371,8 +371,9 @@
 }
 
 .activity_content h2 {
-    color: var(--terciary);
+    color: var(--light-blue);
     font-size: clamp(2rem, 3vw, 3rem);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .activity_content p {

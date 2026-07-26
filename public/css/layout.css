@@ -105,12 +105,12 @@
 }
 
 .conheca ul a:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     cursor: pointer;
 }
 
 .icon_link {
-    width: clamp(85px, 10vw, 140px);
+    width: clamp(200px, 10vw, 250px);
 }
 
 /* ABOUT US */

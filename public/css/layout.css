@@ -131,10 +131,62 @@
 }
 
 .timeline_container {
+    position:relative;
     display: flex;
     flex-direction: column;
     border-top: 3px solid var(--light-green);
     background-color: var(--off-white);
+    overflow: hidden;
+}
+
+.bg_squirrel,
+.bg_paw {
+    position: absolute;
+    opacity: 0.8;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+}
+
+.timeline_left,
+.timeline_right {
+    position: relative;
+    z-index: 2;
+}
+
+.squirrel_1 {
+    width: 280px;
+    top: 40px;
+    left: 20px;
+    transform: rotate(-8deg);
+}
+
+.paw_1 {
+    width: 280px;
+    top: 560px;
+    left: 45%;
+    transform: rotate(-20deg);
+}
+
+.squirrel_2 {
+    width: 280px;
+    top: 1220px;
+    right: 170px;
+    transform: rotate(10deg);
+}
+
+.paw_2 {
+    width: 280px;
+    top: 1820px;
+    left: 15%;
+    transform: rotate(15deg);
+}
+
+.squirrel_3 {
+    width: 280px;
+    top: 180px;
+    right: 40px;
+    transform: rotate(-8deg);
 }
 
 .timeline_left {
@@ -172,7 +224,7 @@
 .timeline_img {
     max-width: 60%;
     justify-self: center;
-    border-radius: 20px;
+    border-radius: 150px;
     background-color: var(--terciary);    
 }
 

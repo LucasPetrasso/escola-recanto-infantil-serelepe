@@ -76,7 +76,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary);
+    background-color: var(--terciary);
+    border-bottom: 1px solid var(--light-green);
 }
 
 .conheca h1 {
@@ -97,7 +98,19 @@
 }
 
 .conheca ul a {
+    display: flex;
+    align-items: center;
     color: var(--white);
+    transition: 0.3s ease;
+}
+
+.conheca ul a:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.icon_link {
+    width: clamp(85px, 10vw, 140px);
 }
 
 /* ABOUT US */

@@ -92,6 +92,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     gap: 10px;
     font-size: 1.5rem;
@@ -110,7 +111,7 @@
 }
 
 .icon_link {
-    width: clamp(200px, 10vw, 250px);
+    width: clamp(140px, 12vw, 250px);
 }
 
 /* ABOUT US */
@@ -194,14 +195,14 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    margin: 80px ;
+    margin: clamp(1.5rem, 4vw, 5rem);
 }
 
 .timeline_left p {
     position: relative;
-    right: 100px; 
-    padding: 150px;
-    font-size: 1.3rem;
+    right: 0;
+    padding: clamp(1.25rem, 3vw, 2.5rem);
+    font-size: clamp(1rem, 1.3vw, 1.3rem);
     border-radius: 25px;
 }
 
@@ -210,19 +211,19 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    margin: 80px;
+    margin: clamp(1.5rem, 4vw, 5rem);
 }
 
 .timeline_right p {
     position: relative;
-    left: 100px; 
-    padding: 150px;
-    font-size: 1.3rem;
+    left: 0;
+    padding: clamp(1.25rem, 3vw, 2.5rem);
+    font-size: clamp(1rem, 1.3vw, 1.3rem);
     border-radius: 25px;
 }
 
 .timeline_img {
-    max-width: 60%;
+    max-width: min(60%, 220px);
     justify-self: center;
     border-radius: 150px;
     background-color: var(--terciary);    
@@ -301,7 +302,8 @@
 
 .contact_form input {
     padding: 16px;
-    width: 35vw;
+    width: min(100%, 35vw);
+    min-width: 240px;
     border: solid 1px;
     border-radius: 8px;
     font-size: 1rem;
@@ -309,19 +311,20 @@
 
 .contact_form textarea {
     padding: 16px;
-    max-width: 35vw;
+    width: min(100%, 35vw);
+    min-width: 240px;
     height: 20vh;
     resize: none;
     border: solid 1px;
     border-radius: 8px;
     font-family:'Roboto', sans-serif;
     font-size: 1rem;
-    
 }
 
 .form_button {
     padding: 14px;
-    max-width: 5vw;
+    width: fit-content;
+    min-width: 120px;
     background-color: var(--mid-green);
     color: var(--white);
     border: none;

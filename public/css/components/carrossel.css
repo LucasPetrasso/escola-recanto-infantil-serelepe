@@ -12,7 +12,7 @@
 }
 
 .carrossel{
-    width: 62vw;
+    width: min(90vw, 62rem);
     display:flex;
     margin: 80px auto;
     padding-bottom: 60px;
@@ -79,6 +79,7 @@
     background: rgba(0, 0, 0, 0.4);
     color:white;
     transition:.3s;
+    flex-shrink: 0;
 }
 
 .carrossel_btn_next{
@@ -91,6 +92,7 @@
     background: rgba(0, 0, 0, 0.4);
     color:white;
     transition:.3s;
+    flex-shrink: 0;
 }
 
 .carrossel_btn_prev:hover {

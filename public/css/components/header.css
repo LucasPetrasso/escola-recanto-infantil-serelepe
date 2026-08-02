@@ -4,6 +4,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    z-index: 300;
 }
 
 .header_top {
@@ -11,21 +13,24 @@
     justify-content: space-around;
     align-items: center;
     background-color: var(--primary);
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .contact_list ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 14px;
-    margin-left: 30px;
+    margin-left: clamp(0.5rem, 2vw, 1.875rem);
     color: black;
 }
 
 .header_socials {
     display: flex;
     gap: 30px;
-    margin-right: 30px;
+    margin-right: clamp(0.5rem, 2vw, 1.875rem);
 }
 
 .header_socials a {
@@ -46,7 +51,7 @@
     position: absolute;
     width: clamp(120px, 12vw, 200px);
     height: auto;
-    margin-left: 100px;
+    margin-left: clamp(1rem, 6vw, 6.25rem);
     z-index: 150;
     bottom: 4px;
 }
@@ -54,15 +59,17 @@
 .nav_menu {
     display: flex;
     align-self: flex-end;
-    margin-right: 180px;
+    margin-right: clamp(1rem, 6vw, 11.25rem);
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .nav_menu a {
-    padding: 20px 24px;
+    padding: clamp(0.8rem, 1.4vw, 1.25rem) clamp(1rem, 2vw, 1.5rem);
     gap: 1px;
     border-left: solid 1px var(--terciary) ;
     color: var(--white);
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1.1vw, 1.3rem);
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;

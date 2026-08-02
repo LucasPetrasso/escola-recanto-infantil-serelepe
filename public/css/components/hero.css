@@ -115,12 +115,14 @@
 }
 
 .hero_banner_content {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: minmax(260px, 400px) minmax(280px, 480px);
     justify-content: center;
     align-items: center;
-    gap: clamp(1.5rem, 4vw, 3rem);
-    flex-wrap: wrap;
+    gap: clamp(1rem, 2.5vw, 2.5rem);
+    width: min(100%, 1080px);
+    margin: 0 auto;
+    padding-inline: clamp(0.75rem, 2vw, 1.5rem);
 }
 
 .hero_banner_img {
@@ -129,11 +131,13 @@
     height: auto;
     margin-left: 0;
     padding: 0;
-    flex: 1 1 320px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .hero_banner_img img {
-    width: min(100%, 480px);
+    width: min(100%, 380px);
     max-width: 100%;
     border-radius: 50px;
 }
@@ -142,8 +146,12 @@
     position: relative;
     padding: 0;
     margin-right: 0;
-    flex: 1 1 320px;
-    max-width: 560px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 0;
 }
 
 .hero_banner_description h2 {

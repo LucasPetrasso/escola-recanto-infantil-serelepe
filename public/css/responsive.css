@@ -102,13 +102,15 @@ body {
     }
 
     .hero_banner_content {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 20px;
+        width: 100%;
     }
 
     .hero_banner_img {
         margin-left: 0;
         width: 100%;
+        justify-content: center;
     }
 
     .hero_banner_img img {
@@ -119,6 +121,7 @@ body {
     .hero_banner_description {
         margin-right: 0;
         padding: 0;
+        text-align: center;
     }
 
     #lista_card {
@@ -174,6 +177,7 @@ body {
     }
 
     .contact_grid {
+        grid-template-columns: 1fr;
         padding: 20px 16px;
         gap: 2rem;
     }
@@ -259,10 +263,12 @@ body {
     .hero_banner_content {
         flex-direction: column;
         gap: 24px;
+        width: 100%;
     }
 
     .hero_banner_img {
         margin-left: 0;
+        justify-content: center;
     }
 
     .hero_banner_img img {
@@ -273,6 +279,8 @@ body {
     .hero_banner_description {
         margin-right: 0;
         padding: 0;
+        text-align: center;
+        align-items: center;
     }
 
     .conheca ul {
@@ -299,6 +307,7 @@ body {
     }
 
     .contact_grid {
+        grid-template-columns: 1fr;
         padding: 24px;
         gap: 2rem;
     }
@@ -341,10 +350,12 @@ body {
     .hero_banner_content {
         flex-direction: column;
         gap: 28px;
+        width: 100%;
     }
 
     .hero_banner_img {
         margin-left: 0;
+        justify-content: center;
     }
 
     .hero_banner_img img {
@@ -355,6 +366,7 @@ body {
     .hero_banner_description {
         margin-right: 0;
         padding: 0;
+        text-align: center;
     }
 
     #lista_card {
@@ -373,6 +385,7 @@ body {
     }
 
     .contact_grid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         gap: 3rem;
     }
 

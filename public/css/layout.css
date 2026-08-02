@@ -276,20 +276,23 @@
 }
 
 .contact_grid {
-    display: flex;
-    align-self: stretch;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
-    padding: 20px;
-    gap: 5rem;
+    width: 100%;
+    max-width: none;
+    padding: 2rem clamp(1.25rem, 3vw, 2.5rem);
+    gap: clamp(1.5rem, 3vw, 2.5rem);
     background-color: var(--primary);
-    flex-wrap: wrap;
 }
 
 .contact_form {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 100%;
+    max-width: 32rem;
+    justify-self: center;
 } 
 
 .contact_form h3 {
@@ -302,7 +305,7 @@
 
 .contact_form input {
     padding: 16px;
-    width: min(100%, 35vw);
+    width: 100%;
     min-width: 240px;
     border: solid 1px;
     border-radius: 8px;
@@ -311,7 +314,7 @@
 
 .contact_form textarea {
     padding: 16px;
-    width: min(100%, 35vw);
+    width: 100%;
     min-width: 240px;
     height: 20vh;
     resize: none;
@@ -337,6 +340,15 @@
 
 .form_button:hover {
     transform: translateY(-5px);
+}
+
+.contact_map {
+    width: 100%;
+    max-width: 100%;
+    min-height: 420px;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 /* EXTRACURRICULARES */

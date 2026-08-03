@@ -67,7 +67,7 @@
 .nav_menu a {
     padding: clamp(0.8rem, 1.4vw, 1.25rem) clamp(1rem, 2vw, 1.5rem);
     gap: 1px;
-    border-left: solid 1px var(--terciary) ;
+    
     color: var(--white);
     font-size: clamp(1rem, 1.1vw, 1.3rem);
     font-weight: bold;
@@ -79,8 +79,4 @@
     background-color: var(--terciary);
     transform: translateY(-5px);
     transition: 0.5s ease;
-}
-
-#detalhe_btn_contato {
-    border-right: solid 1px var(--terciary);
 }

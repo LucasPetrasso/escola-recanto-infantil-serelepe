@@ -162,8 +162,10 @@ body {
     }
 
     .timeline_img {
-        max-width: 60%;
+        width: min(60%, 360px);
+        height: min(60%, 260px);
         margin-bottom: 20px;
+        object-fit: cover;
     }
 
     .bg_squirrel,
@@ -302,8 +304,10 @@ body {
     }
 
     .timeline_img {
-        max-width: 55%;
+        width: min(55%, 340px);
+        height: min(55%, 240px);
         margin-bottom: 20px;
+        object-fit: cover;
     }
 
     .contact_grid {

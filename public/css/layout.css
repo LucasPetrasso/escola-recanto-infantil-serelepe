@@ -169,22 +169,22 @@
 
 .paw_1 {
     width: 280px;
-    top: 560px;
+    top: 580px;
     left: 45%;
     transform: rotate(-20deg);
 }
 
 .squirrel_2 {
     width: 280px;
-    top: 1220px;
+    top: 1230px;
     right: 170px;
     transform: rotate(10deg);
 }
 
 .paw_2 {
     width: 280px;
-    top: 1820px;
-    left: 15%;
+    top: 1340px;
+    left: 23%;
     transform: rotate(15deg);
 }
 
@@ -207,7 +207,7 @@
     position: relative;
     right: 0;
     padding: clamp(1.25rem, 3vw, 2.5rem);
-    font-size: clamp(1rem, 1.3vw, 1.3rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     border-radius: 25px;
 }
 
@@ -223,16 +223,18 @@
     position: relative;
     left: 0;
     padding: clamp(1.25rem, 3vw, 2.5rem);
-    font-size: clamp(1rem, 1.3vw, 1.3rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     border-radius: 25px;
 }
 
 .timeline_img {
-    width: min(85%, 380px);
-    max-width: 380px;
+    width: clamp(380px, 45vw, 520px);
+    height: clamp(260px, 32vw, 340px);
+    max-width: 520px;
+    max-height: 340px;
     justify-self: center;
-    border-radius: 150px;
-    background-color: var(--terciary);    
+    object-fit: cover;
+    border-radius: 50px;
 }
 
 /* TURMAS - PÁGINA */
@@ -255,7 +257,7 @@
 .turmas_description p {
     text-align: center;
     color: var(--white);
-    font-size: clamp(1rem, 1.4vw, 1.3rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     margin: 0 clamp(20px, 5vw, 140px) 40px;
 }
 
@@ -289,7 +291,7 @@
     max-width: none;
     padding: 2rem clamp(1.25rem, 3vw, 2.5rem);
     gap: clamp(1.5rem, 3vw, 2.5rem);
-    background-color: var(--primary);
+    background-color: var(--off-white);
 }
 
 .contact_form {
@@ -304,9 +306,7 @@
 .contact_form h3 {
     align-self: center;
     padding-top: 12px;
-    color: var(--white);
     font-size: 2.25rem;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 } 
 
 .contact_form input {
@@ -402,7 +402,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 40px 20px;
+    padding: 20px 15px;
     border-radius: 20px;
     background-color: var(--off-white);
     text-decoration: none;
@@ -416,7 +416,7 @@
 }
 
 .activity_card img {
-    width: clamp(90px, 7vw, 140px);
+    width: clamp(90px, 10vw, 190px);
 }
 
 .activity_card h2 {
@@ -443,7 +443,7 @@
     direction: ltr;
 }
 
-.activity_image {
+.activity_video {
     width: 100%;
     border-radius: 24px;
     object-fit: cover;
@@ -463,9 +463,8 @@
 }
 
 .activity_content p {
-    font-size: clamp(1rem, 1.2vw, 1.25rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     line-height: 1.9;
-    color: #555;
 }
 
 .activity_section:not(:last-child) {

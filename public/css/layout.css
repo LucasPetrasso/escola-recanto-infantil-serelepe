@@ -169,29 +169,29 @@
 
 .paw_1 {
     width: 280px;
-    top: 580px;
-    left: 45%;
+    top: 730px;
+    left: 35%;
     transform: rotate(-20deg);
 }
 
 .squirrel_2 {
     width: 280px;
-    top: 1230px;
-    right: 170px;
+    top: 1460px;
+    right: 180px;
     transform: rotate(10deg);
 }
 
 .paw_2 {
     width: 280px;
-    top: 1340px;
-    left: 23%;
+    top: 1650px;
+    left: 20%;
     transform: rotate(15deg);
 }
 
 .squirrel_3 {
     width: 280px;
-    top: 180px;
-    right: 40px;
+    top: 720px;
+    right: 180px;
     transform: rotate(-8deg);
 }
 

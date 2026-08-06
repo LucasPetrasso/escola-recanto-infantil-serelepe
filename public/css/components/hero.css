@@ -121,8 +121,8 @@
 }
 
 .hero_banner_img img {
-    width: min(100%, 380px);
-    max-width: 100%;
+    width: clamp(280px, 30vw, 480px);
+    max-width: 480px;
     border-radius: 50px;
 }
 

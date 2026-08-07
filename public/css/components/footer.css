@@ -57,3 +57,24 @@
     padding: 20px;
     font-size: .9rem;
 }
+
+.wpp_btn {
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    animation: pulsar 2.5s infinite;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

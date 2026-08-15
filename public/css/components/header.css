@@ -47,6 +47,10 @@
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
+.menu_hamburguer {
+    display: none;
+}
+
 .header_logo img {
     position: absolute;
     width: clamp(120px, 12vw, 200px);

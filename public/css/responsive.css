@@ -417,9 +417,9 @@ body {
     }
 
     .hero_banner_content {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 28px;
-        width: 100%;
+        width: min(100%, 760px);
     }
 
     .hero_banner_img {
@@ -436,21 +436,34 @@ body {
         margin-right: 0;
         padding: 0;
         text-align: center;
+        align-items: center;
+        max-width: 620px;
     }
 
     #lista_card {
+        width: min(100%, 760px);
         justify-content: center;
+    }
+
+    .turma_card {
+        width: min(100%, 320px);
     }
 
     .timeline_left,
     .timeline_right {
+        grid-template-columns: 1fr;
         margin: 50px 30px;
     }
 
     .timeline_left p,
     .timeline_right p {
-        padding: 80px;
-        font-size: 1.15rem;
+        padding: 32px;
+        font-size: 1.1rem;
+    }
+
+    .timeline_img {
+        width: min(62%, 340px);
+        margin-bottom: 20px;
     }
 
     .contact_grid {
@@ -472,6 +485,42 @@ body {
         max-width: 620px;
         height: 420px;
     }
+
+    .cards_section {
+        width: min(92%, 760px);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .activity_card {
+        padding: 18px 12px;
+    }
+
+    .activity_card img {
+        width: min(100%, 150px);
+    }
+
+    .activity_section {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 70px 24px;
+    }
+
+    .activity_content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .activity_image,
+    .activity_video {
+        width: min(100%, 520px);
+        margin: 0 auto;
+    }
+
+    .hero_extra {
+        width: min(90%, 760px);
+        padding-inline: 20px;
+    }
 }
 
 /* LG - Grande: 992px a 1199px */
@@ -480,7 +529,6 @@ body {
         width: clamp(140px, 12vw, 180px);
         margin-left: 70px;
     }
-
 
     .menu_hamburguer {
         display: none;
@@ -506,6 +554,88 @@ body {
     .timeline_left p,
     .timeline_right p {
         padding: 100px;
+    }
+
+    .cards_section {
+        width: min(92%, 1040px);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .activity_section {
+        padding: 90px 5%;
+    }
+}
+
+/* XS / SM - Pequenos: até 767px */
+@media (max-width: 767.98px) {
+    .hero_extra {
+        width: min(92%, 520px);
+        gap: 18px;
+        margin: 56px 0;
+    }
+
+    .hero_extra h1 {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+    }
+
+    .hero_extra p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .cards_section {
+        width: min(92%, 520px);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-bottom: 56px;
+    }
+
+    .activity_card {
+        gap: 14px;
+        padding: 16px 10px;
+        min-height: 190px;
+    }
+
+    .activity_card img {
+        width: min(100%, 110px);
+    }
+
+    .activity_card h2 {
+        font-size: 1.1rem;
+    }
+
+    .activity_section {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 42px 18px;
+    }
+
+    .activity_content {
+        gap: 14px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .activity_content h2 {
+        font-size: 1.8rem;
+    }
+
+    .activity_content p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .activity_image,
+    .activity_video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 18px;
+    }
+
+    .reverse {
+        direction: ltr;
     }
 }
 

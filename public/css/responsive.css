@@ -87,10 +87,12 @@ body {
         top: 100%;
         left: 0;
         background-color: var(--secondary);
+        z-index: 60;
     }
 
     .nav_menu.ativo {
         display: flex;
+        z-index: 60;
     }
 
     .slider {
@@ -287,10 +289,12 @@ body {
         top: 100%;
         left: 0;
         background-color: var(--secondary);
+        z-index: 60;
     }
 
     .nav_menu.ativo {
         display: flex;
+        z-index: 60;
     }
 
     .slider {
@@ -410,10 +414,12 @@ body {
         top: 100%;
         left: 0;
         background-color: var(--secondary);
+        z-index: 60;
     }
 
     .nav_menu.ativo {
         display: flex;
+        z-index: 60;
     }
 
     .hero_banner_content {

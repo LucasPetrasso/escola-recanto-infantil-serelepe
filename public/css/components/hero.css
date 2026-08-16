@@ -1,10 +1,12 @@
 /* SLIDES */
 
 .slider {
+    position: relative;
     width: 100%;
     min-height: 550px;
     height: 75vh;
     max-height: 900px;
+    z-index: 1;
 }
 
 .slides {
@@ -32,15 +34,32 @@
     position: absolute;
     top: 57%;
     transform: translateY(-50%);
-    z-index: 10;
+    z-index: 5;
     background: rgba(0, 0, 0, 0.4);
     border: none;
     color: white;
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 50%;
+}
+
+@media (max-width: 767.98px) {
+    .btn {
+        top: 60%;
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .btn {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+    }
 }
 
 .prev {
@@ -59,16 +78,17 @@
 
 .indicators {
     position: absolute;
-    bottom: 86px;
+    bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 10px;
+    z-index: 8;
 }
 
 .indicator {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: rgba(255,255,255,0.5);
     cursor: pointer;
@@ -76,6 +96,24 @@
 
 .indicator.active {
     background: var(--white);
+}
+
+@media (max-width: 767.98px) {
+    .indicators {
+        bottom: 18px;
+        gap: 8px;
+    }
+
+    .indicator {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .indicators {
+        bottom: 18px;
+    }
 }
 
 /* BANNER */

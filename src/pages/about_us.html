@@ -7,13 +7,14 @@
     <title>Recanto Infantil Serelepe</title>
     
     <!-- STYLE -->
-    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="../public/css/main.css">
 
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- SCRIPTS-->
-     <script defer src="/js/mobile_menu.js"></script>
+    <!-- SCRIPT -->
+    <script defer src="../js/carrossel.js"></script>
+    <script defer src="../js/mobile_menu.js"></script>
 
     <!-- FONTS -->
     <link 
@@ -54,17 +55,16 @@
             </div>
             <div class="header_nav">
                 <div class="header_logo">
-                    <a href="/index.html">
-                        <img src="/public/images/logo.png" alt="logo da escola Recanto Infantil Serelepe">
+                    <a href="../index.html">
+                        <img src="../public/images/logo.png" alt="logo da escola Recanto Infantil Serelepe">
                     </a>
                 </div>
-
                 <!-- MENU MOBILE -->
                 <button class="menu_hamburguer" id="menuHamburguer">☰</button>
 
-                <!-- MENU DESTOP-->
+                <!-- MENU DESKTOP-->
                 <nav class="nav_menu">
-                    <a href="/index.html">Home</a>
+                    <a href="../index.html">Home</a>
                     <a href="about_us.html">Sobre Nós</a>
                     <a href="turmas.html">Turmas</a>
                     <a href="extracurriculares.html">Aulas Extra-Curriculares</a>
@@ -73,34 +73,137 @@
             </div>
         </header>
 
-        <!-- CONTATO -->
-        <section class="contact_section">
-            <h1>FALE CONOSCO</h1>
-            <div class="contact_grid">
-                <form class="contact_form" action="https://formsubmit.co/atendimento@riserelepe.com.br" method="POST">
-                    <h3>Tire suas dúvidas</h3>
-                    <input type="text" class="form_name" name="name" placeholder="Nome Completo" required>
-                    <input type="text" class="form_child_name" name="child_name" placeholder="Nome da Criança" required>
-                    <input type="email" class="form_email" name="email" placeholder="Email" required>
-                    <textarea name="message" required>Deixe Sua Mensagem</textarea>
-                    <button type="submit" class="form_button" name="submit">Enviar</button>
-                </form>
-                <iframe class="contact_map" 
-                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.8575141265874!2d-46.54592392466622!3d-23.681052978717794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4245a9b4d5bf%3A0x565d1db2f4ad89d7!2sSerelepe%20Recanto%20Infantil!5e0!3m2!1spt-BR!2sbr!4v1784498970862!5m2!1spt-BR!2sbr" 
-                   width="800" 
-                   height="600" 
-                   style="border:0;" 
-                   allowfullscreen="" loading="lazy" 
-                   referrerpolicy="strict-origin-when-cross-origin">
-                </iframe>
+        <!-- MAIN CONTENT -->
+        <main class="about_us_container">
+            
+         <h1>QUEM SOMOS</h1>
+            <div class="timeline_container">
+
+                <!-- ELEMENTOS DECORATIVOS -->
+                <img src="../public/images/esquilo-direita.png" class="bg_squirrel squirrel_1" alt="">
+                <img src="../public/images/pegadas.png" class="bg_paw paw_1" alt="">
+                <img src="../public/images/esquilo-sentado.png" class="bg_squirrel squirrel_2" alt="">
+                <img src="../public/images/pegadas.png" class="bg_paw paw_2" alt="">
+                <img src="../public/images/esquilo-esquerda.png" class="bg_squirrel squirrel_3" alt="">
+
+                <!-- TIMELINE -->
+                <div class="timeline_left">
+                    <img src="../public/images/logo_no_text.png" class="timeline_img">
+                    <p>
+                    Desde 1978, o Recanto Infantil Serelepe dedica-se a oferecer uma educação pautada no carinho, 
+                    no respeito e no desenvolvimento integral das crianças.<br><br> Ao longo de nossa história, construímos 
+                    uma trajetória marcada por aprendizados, conquistas e pela constante busca por um ensino de excelência.
+                    </p>
             </div>
-        </section>
+            <div class="timeline_right">
+                <p>
+                   Hoje, temos a alegria de receber os filhos de antigos alunos, famílias que voltam a confiar em nosso trabalho 
+                   e fazem parte dessa história.<br><br> Esse vínculo atravessa gerações e reforça o compromisso que assumimos diariamente 
+                   com cada criança que passa por nossa escola.
+                </p>
+                <img src="../public/images/logo_no_text.png" class="timeline_img">
+            </div>
+            <div class="timeline_left">
+                <img src="../public/images/logo_no_text.png" class="timeline_img">
+                <p>
+                   Acreditamos que a educação tem o poder de transformar vidas.<br><br> Por isso, oferecemos um ambiente seguro, acolhedor e estimulante, 
+                   onde cada criança é respeitada em sua individualidade e incentivada a desenvolver sua autonomia, criatividade, curiosidade e confiança.
+                </p>
+            </div>
+            <div class="timeline_right">
+                <p>
+                   Mais do que ensinar, nossa missão é cuidar, acolher e contribuir para a formação de crianças felizes, 
+                   preparadas para descobrir o mundo e construir um futuro repleto de possibilidades.
+                </p>
+                <img src="../public/images/logo_no_text.png" class="timeline_img">
+            </div>
+            </div>
+        </main>
+
+        <!-- CARROSSEL -->
+        <section id="carrossel_section">
+            <h1> NOSSOS ESPAÇOS</h1>
+            <div class="carrossel">
+                <button class="carrossel_btn_prev">&#10094;</button>
+                <div class="carrossel_container">
+                    <div class="carrossel_slides">
+                        <div class="carrossel_slide_img">
+                            <img src="../public/images/patio_frente_01.jpeg" alt="Foto 1">
+                            <div class="carrossel_legenda">
+                                <h3>Pátio Frontal</h3>
+                            </div>
+                        </div>
+                        <div class="carrossel_slide_img">
+                            <img src="../public/images/bercario_01.jpeg" alt="Foto 2">
+                            <div class="carrossel_legenda">
+                                <h3>Berçário</h3>
+                            </div>
+                        </div>
+                        <div class="carrossel_slide_img">
+                            <img src="../public/images/patio_fundos_01.jpeg" alt="Foto 3">
+                            <div class="carrossel_legenda">
+                                <h3>Pátio dos Fundos</h3>
+                            </div>
+                        </div>
+                        <div class="carrossel_slide_img">
+                            <img src="../public/images/refeitorio_01.jpeg" alt="Foto 4">
+                            <div class="carrossel_legenda">
+                                <h3>Refeitório</h3>
+                            </div>
+                        </div>
+                        <div class="carrossel_slide_img">
+                            <img src="../public/images/refeitorio_bercario_01.jpeg" alt="Foto 5">
+                            <div class="carrossel_legenda">
+                                <h3>Refeitório do Berçário</h3>
+                            </div>
+                        </div>
+                        <div class="carrossel_slide_img">
+                            <img src="../public/images/sala_de_aula_03.jpeg" alt="Foto 6">
+                            <div class="carrossel_legenda">
+                                <h3>Sala de Aula</h3>
+                            </div>
+                        </div>
+                        <div class="carrossel_slide_img">
+                            <img src="../public/images/sala_computacao.jpeg" alt="Foto 7">
+                            <div class="carrossel_legenda">
+                                <h3>Sala de Computação</h3>
+                            </div>
+                        </div>
+                        <div class="carrossel_slide_img">
+                            <img src="../public/images/sala_de_aula_01.jpeg" alt="Foto 8">
+                            <div class="carrossel_legenda">
+                                <h3>Sala de Aula</h3>
+                            </div>
+                        </div>
+                        <div class="carrossel_slide_img">
+                            <img src="../public/images/sala_de_aula_04.jpeg" alt="Foto 9">
+                            <div class="carrossel_legenda">
+                                <h3>Sala de Aula</h3>
+                            </div>
+                        </div>
+                        <div class="carrossel_slide_img">
+                            <img src="../public/images/evento_mini_chef_02.jpeg" alt="Foto 10">
+                            <div class="carrossel_legenda">
+                                <h3>Evento: Mini Chef</h3>
+                            </div>
+                        </div>
+                        <div class="carrossel_slide_img">
+                            <img src="../public/images/natal_01.jpeg" alt="Foto 11">
+                            <div class="carrossel_legenda">
+                                <h3>Natal Serelepe</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrossel_btn_next">&#10095;</button>
+            </div>
+        </section> 
 
         <!-- FOOTER -->
         <footer class="footer">
             <div class="footer_container">
                 <div class="footer_col">
-                    <img src="/public/images/logo_no_text.png" alt="Logo Recanto Infantil Serelepe" class="footer_logo">
+                    <img src="../public/images/logo_no_text.png" alt="Logo Recanto Infantil Serelepe" class="footer_logo">
                     <p>
                         Educação com amor desde 1978. Um ambiente seguro, acolhedor e preparado para
                         desenvolver o potencial de cada criança.
@@ -109,7 +212,7 @@
                 <div class="footer_col">
                     <h3>Links Rápidos</h3>
                     <ul>
-                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="../index.html">Home</a></li>
                         <li><a href="about_us.html">Sobre Nós</a></li>
                         <li><a href="turmas.html">Turmas</a></li>
                         <li><a href="extracurriculares.html">Aulas Extras</a></li>
@@ -167,3 +270,5 @@
             </a>
         </footer>
     </div>
+</body>
+</html>

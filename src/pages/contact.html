@@ -7,13 +7,13 @@
     <title>Recanto Infantil Serelepe</title>
     
     <!-- STYLE -->
-    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="../public/css/main.css">
 
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- SCRIPTS-->
-     <script defer src="/js/mobile_menu.js"></script>
+     <script defer src="../js/mobile_menu.js"></script>
 
     <!-- FONTS -->
     <link 
@@ -44,7 +44,7 @@
                     </ul>
                 </div>
                 <div class="header_socials">
-                    <a href="https://www.facebook.com/recantoinfantilserelepe/?locale=pt_BR" target="_blank">
+                     <a href="https://www.facebook.com/recantoinfantilserelepe/?locale=pt_BR" target="_blank">
                         <i class="bi bi-facebook"></i>
                     </a>
                     <a href="https://www.instagram.com/riserelepe/" target="_blank">
@@ -54,16 +54,17 @@
             </div>
             <div class="header_nav">
                 <div class="header_logo">
-                    <a href="/index.html">
-                        <img src="/public/images/logo.png" alt="logo da escola Recanto Infantil Serelepe">
+                    <a href="../index.html">
+                        <img src="../public/images/logo.png" alt="logo da escola Recanto Infantil Serelepe">
                     </a>
                 </div>
+
                 <!-- MENU MOBILE -->
                 <button class="menu_hamburguer" id="menuHamburguer">☰</button>
 
-                <!-- MENU DESKTOP-->
+                <!-- MENU DESTOP-->
                 <nav class="nav_menu">
-                    <a href="/index.html">Home</a>
+                    <a href="../index.html">Home</a>
                     <a href="about_us.html">Sobre Nós</a>
                     <a href="turmas.html">Turmas</a>
                     <a href="extracurriculares.html">Aulas Extra-Curriculares</a>
@@ -71,71 +72,35 @@
                 </nav>
             </div>
         </header>
-        
-        <!-- TURMAS -->
-        <section class="turmas_section">
-            <div class="turmas_description">
-                <h1>TURMAS</h1>
-                <p>
-                    Um espaço preparado para cada etapa do desenvolvimento.
-                    Do berçário à Educação Infantil, cada turma do Recanto Infantil Serelepe oferece atividades, 
-                    experiências e cuidados planejados para respeitar o ritmo de aprendizagem e incentivar o desenvolvimento integral de cada criança.
-                </p>
-            </div>
-            <div class="timeline_container">
 
-                  <!-- ELEMENTOS DECORATIVOS -->
-                <img src="/public/images/esquilo-direita.png" class="bg_squirrel squirrel_1" alt="">
-                <img src="/public/images/pegadas.png" class="bg_paw paw_1" alt="">
-                <img src="/public/images/esquilo-sentado.png" class="bg_squirrel squirrel_2" alt="">
-                <img src="/public/images/pegadas.png" class="bg_paw paw_2" alt="">
-                <img src="/public/images/esquilo-esquerda.png" class="bg_squirrel squirrel_3" alt="">
-                
-                <div class="timeline_left">
-                    <img src="/public/images/bercario_03.png" class="timeline_img">
-                    <p id="bercario">
-                        <span class="turmas_title">Berçário</span><br><br>
-                        Um começo repleto de carinho e cuidado. Nosso berçário foi planejado para oferecer um ambiente seguro, acolhedor 
-                        e tranquilo, onde cada bebê recebe atenção individualizada e estímulos adequados à sua fase de desenvolvimento.<br><br> 
-                        Nossa equipe de profissionais acompanha de perto cada conquista, respeitando o ritmo de cada criança e 
-                        promovendo experiências que favorecem o desenvolvimento motor, cognitivo, sensorial e afetivo.<br><br> 
-                        Com espaços preparados especialmente para os pequenos, garantimos conforto, higiene, 
-                        segurança e muito amor em cada momento do dia.
-                    </p>
-                </div>
-                <div class="timeline_right">
-                    <p id="maternal">
-                        <span class="turmas_title">Maternal I e II</span><br><br>
-                        Aprender brincando é a melhor forma de crescer.
-                        No Maternal I e Maternal II, as crianças vivenciam uma fase de grandes descobertas e desenvolvimento.<br><br> 
-                        Por meio de atividades lúdicas, brincadeiras, música, contação de histórias, experiências sensoriais e 
-                        projetos pedagógicos, estimulamos a curiosidade, a criatividade e a autonomia.<br><br> Nossa proposta valoriza 
-                        o desenvolvimento da linguagem, da coordenação motora, da socialização e das habilidades emocionais, 
-                        sempre em um ambiente seguro, acolhedor e repleto de afeto, onde cada criança é incentivada a 
-                        explorar o mundo ao seu redor com confiança e alegria.
-                    </p>
-                    <img src="/public/images/maternal_patio.png" class="timeline_img">
-                </div>
-                 <div class="timeline_left">
-                    <img src="/public/images/etapas_1_e_2.png" class="timeline_img">
-                    <p id="etapa">
-                        <span class="turmas_title">1ª e 2ª Etapas</span><br><br>
-                        Preparando cada criança para novos desafios. Nessas fases, proporcionamos um ambiente que 
-                        estimula a aprendizagem de forma significativa, respeitando o ritmo e as potencialidades de cada criança.<br><br>
-                        Por meio de projetos pedagógicos, atividades lúdicas e experiências diversificadas, desenvolvemos 
-                        habilidades relacionadas à linguagem, ao raciocínio lógico, à coordenação motora, à criatividade
-                        e à convivência em grupo.<br><br> Nossa proposta fortalece a autonomia, a confiança e o prazer em aprender, 
-                        preparando os alunos para a transição ao Ensino Fundamental de maneira leve, segura e acolhedora.
-                    </p>
-                </div>
-            </div>    
+        <!-- CONTATO -->
+        <section class="contact_section">
+            <h1>FALE CONOSCO</h1>
+            <div class="contact_grid">
+                <form class="contact_form" action="https://formsubmit.co/atendimento@riserelepe.com.br" method="POST">
+                    <h3>Tire suas dúvidas</h3>
+                    <input type="text" class="form_name" name="name" placeholder="Nome Completo" required>
+                    <input type="text" class="form_child_name" name="child_name" placeholder="Nome da Criança" required>
+                    <input type="email" class="form_email" name="email" placeholder="Email" required>
+                    <textarea name="message" required>Deixe Sua Mensagem</textarea>
+                    <button type="submit" class="form_button" name="submit">Enviar</button>
+                </form>
+                <iframe class="contact_map" 
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.8575141265874!2d-46.54592392466622!3d-23.681052978717794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4245a9b4d5bf%3A0x565d1db2f4ad89d7!2sSerelepe%20Recanto%20Infantil!5e0!3m2!1spt-BR!2sbr!4v1784498970862!5m2!1spt-BR!2sbr" 
+                   width="800" 
+                   height="600" 
+                   style="border:0;" 
+                   allowfullscreen="" loading="lazy" 
+                   referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
         </section>
 
         <!-- FOOTER -->
         <footer class="footer">
             <div class="footer_container">
                 <div class="footer_col">
-                    <img src="/public/images/logo_no_text.png" alt="Logo Recanto Infantil Serelepe" class="footer_logo">
+                    <img src="../public/images/logo_no_text.png" alt="Logo Recanto Infantil Serelepe" class="footer_logo">
                     <p>
                         Educação com amor desde 1978. Um ambiente seguro, acolhedor e preparado para
                         desenvolver o potencial de cada criança.
@@ -144,7 +109,7 @@
                 <div class="footer_col">
                     <h3>Links Rápidos</h3>
                     <ul>
-                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="../index.html">Home</a></li>
                         <li><a href="about_us.html">Sobre Nós</a></li>
                         <li><a href="turmas.html">Turmas</a></li>
                         <li><a href="extracurriculares.html">Aulas Extras</a></li>
@@ -201,4 +166,4 @@
                 </svg> 
             </a>
         </footer>
-    </div>        
+    </div>

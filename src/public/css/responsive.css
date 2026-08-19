@@ -682,6 +682,31 @@ body {
     }
 }
 
+/* TIMELINE - Foto e texto alternados em telas menores */
+@media (max-width: 991.98px) {
+    .timeline_left,
+    .timeline_right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline_left .timeline_img,
+    .timeline_right .timeline_img {
+        order: 1;
+    }
+
+    .timeline_left p,
+    .timeline_right p {
+        order: 2;
+        width: 100%;
+    }
+
+    .timeline_right .timeline_img {
+        order: 1;
+    }
+}
+
 /* XL - Extra Grande: 1200px ou mais */
 @media (min-width: 1200px) {
     .container {

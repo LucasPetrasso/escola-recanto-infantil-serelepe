@@ -482,3 +482,8 @@
 .activity_section:hover .activity_image {
     transform: scale(1.02);
 }
+
+/*  BOTÃO WPP */
+.wpp_btn {
+    z-index: 50;
+}

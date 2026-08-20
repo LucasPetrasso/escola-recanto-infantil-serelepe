@@ -86,11 +86,14 @@ body {
         top: 100%;
         right: 0;
         left: auto;
+        margin-right: 0;
+        border: none;
+        border-radius: 8px;
         background-color: var(--secondary);
         z-index: 60;
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-10px);
+        transform: translateX(100%);
         transition:
             opacity 0.3s ease,
             transform 0.3s ease,
@@ -100,7 +103,7 @@ body {
     .nav_menu.ativo {
         opacity: 1;
         visibility: visible;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     .slider {
@@ -298,13 +301,15 @@ body {
         top: 100%;
         right: 0;
         left: auto;
-
+        margin-right: 0;
+        border: none;
+        border-radius: 8px;
         background-color: var(--secondary);
         z-index: 60;
 
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-10px);
+        transform: translateX(100%);
 
         transition:
             opacity 0.3s ease,
@@ -315,7 +320,7 @@ body {
     .nav_menu.ativo {
         opacity: 1;
         visibility: visible;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     .slider {
@@ -436,13 +441,15 @@ body {
         top: 100%;
         right: 0;
         left: auto;
-
+        margin-right: 0;
+        border: none;
+        border-radius: 8px;
         background-color: var(--secondary);
         z-index: 60;
 
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-10px);
+        transform: translateX(100%);
 
         transition:
             opacity 0.3s ease,
@@ -453,7 +460,7 @@ body {
     .nav_menu.ativo {
         opacity: 1;
         visibility: visible;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     .hero_banner_content {

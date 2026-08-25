@@ -86,34 +86,35 @@ A navegação também possui um **menu hamburguer** para dispositivos menores, p
 ```text
 RISERELEPE/
 │
-├── src/
-│   ├── js/
-│   │
-│   ├── pages/
-│   │   ├── about_us.html
-│   │   ├── contact.html
-│   │   ├── extracurricular.html
-│   │   └── turmas.html
-│   │
-│   ├── public/
-│   │   ├── css/
-│   │   │   ├── components/
-│   │   │   │   ├── carrossel.css
-│   │   │   │   ├── footer.css
-│   │   │   │   ├── header.css
-│   │   │   │   └── hero.css
-│   │   │   ├── base.css
-│   │   │   ├── layout.css
-│   │   │   ├── main.css
-│   │   │   ├── reset.css
-│   │   │   ├── responsive.css
-│   │   │   └── variables.css
-│   │   │
-│   │   ├── images/
-│   │   └── videos/
-│   │
-│   └── index.html
+├── js/
 │
+├── pages/
+│   ├── about_us.html
+│   ├── contact.html
+│   ├── extracurriculares.html
+│   └── turmas.html
+│
+├── public/
+│   ├── css/
+│   │   ├── components/
+│   │   │   ├── carrossel.css
+│   │   │   ├── footer.css
+│   │   │   ├── header.css
+│   │   │   └── hero.css
+│   │   ├── base.css
+│   │   ├── layout.css
+│   │   ├── main.css
+│   │   ├── reset.css
+│   │   ├── responsive.css
+│   │   └── variables.css
+│   │
+│   ├── images/
+│   └── videos/
+│
+├── index.html
+├── robots.txt
+├── sitemap.xml
+├── .gitignore
 └── README.md
 ```
 

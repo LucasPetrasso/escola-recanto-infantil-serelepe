@@ -25,6 +25,11 @@
     gap: 15px;
 }
 
+.footer_socials {
+    display: flex;
+    gap: 15px;
+}
+
 .footer_logo{
     width: clamp(120px, 35%, 220px);
 }
